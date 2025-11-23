@@ -81,32 +81,3 @@
         padding-top: 24px;
     }
 }
-@media (max-width:1024px){
-    .feedback{
-        &__head{
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
-        }
-        &__title{
-            text-align: center;
-        }
-    }
-}
-@media (max-width:768px){
-    .feedback{
-        &__content{
-            padding: 50px 50px 166px;
-        }
-        &__title{
-            font-size: 40px;
-        }
-    }
-}
-@media (max-width:375px){
-    .feedback{
-        &__title{
-            font-size: 32px;
-        }
-    }
-}

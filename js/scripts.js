@@ -2,17 +2,6 @@
 document.querySelector('.header__discount-cross').addEventListener('click', () => {
   document.querySelector('.header__discount').style.display = 'none';
 });
-//бургер
-document.addEventListener('DOMContentLoaded', () => {
-  const burger = document.querySelector('.header__burger');
-  const nav = document.querySelector('.header__nav');
-
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    burger.classList.toggle('open');
-  });
-});
-
 
 //слайдер
 document.addEventListener('DOMContentLoaded', () => {
@@ -67,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  // Делегация: ловим клики по миниатюрам внутри контейнера
+//
   container.addEventListener('click', (e) => {
     const thumb = e.target.closest('[data-full].product__pic-thumb');
     if (!thumb) return;
@@ -75,11 +64,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const url = thumb.dataset.full;
     if (!url) return;
 
-    // Визуально активная миниатюра
+
     container.querySelectorAll('.product__pic-thumb').forEach(t => t.classList.remove('is-active'));
     thumb.classList.add('is-active');
 
-    // Предзагрузка и плавная смена
+  
     const pre = new Image();
     pre.onload = () => {
       main.classList.add('is-fading');

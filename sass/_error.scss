@@ -1,16 +1,23 @@
 @import 'variables';
 .error{
-    max-width: 1440px;
-    margin: 0 auto;
+    &__content{
     text-align: center;
     display: flex;
     gap: 40px;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    }
     &__desc{
         display: flex;
         flex-direction: column;
-        
+        gap: 30px;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    &__img{
+        max-width: 75%;
     }
     &__main p{
             font-size: 32px;
@@ -21,13 +28,41 @@
         font-size: 24px;
             font-family: $font-satoshi;
             margin: 0;
+            opacity: 60%;
+    }
+    &__minor{
+        padding-bottom:40px;
     }    
     &__back{
         border: 0;
         border-radius: 62px;    
-        background-color: $dark-color-op;
+        background-color: $dark-color;
         padding: 15px 67.5px;
-        font-size: 24px;
+        font-size: 18px;
         font-family: $font-satoshi;
+        font-weight: 800;
+        color: $light-color;
+        &:hover{
+        background-color: $light-color;
+            color: $dark-color;
+            border: 1px solid $dark-color-op;
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+    }
+}
+
+@media (max-width:1024px){
+    .error{
+    &__content{
+        flex-direction: column;
+    }}
+}
+@media(max-width:400px){
+    .error{
+        &__back{
+            font-size: 14px;
+            padding: 15px 40px;
+        }
     }
 }

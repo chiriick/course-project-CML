@@ -50,6 +50,10 @@
         align-items: center;
         font-family: $font-satoshi;
         font-size: 16px;
+        color: $light-color;
+        a:hover{
+            color: $light-color;
+        }
         &:hover{
             background-color: $dark-color;
             color: $light-color;
@@ -60,54 +64,3 @@
     }
 }
 
-@media (max-width:1024px){
-    .subscribe{
-        &__content{
-            flex-direction: column;
-            gap: 30px;
-            margin:-140px 24px;
-        }
-        &__title{
-            text-align: center;
-        }
-    }
-}
-@media(max-width:768px){
-    .subscribe{
-        &__title{
-            font-size: 28px;
-        }
-    }
-}
-@media (max-width:650px){
-    .subscribe{
-        &__content{
-            padding: 34px 32px;
-        }
-        &__title{
-            font-size: 22px;
-        }
-        &__input{
-            max-width: 220px;
-        }
-    }
-}
-@media (max-width:650px){
-    .subscribe{
-        &__input{
-            max-width: 200px;
-        }
-    }
-}
-@media (max-width:375px){
-    .subscribe{
-        &__content{
-            padding: 34px 20px;
-        }
-        &__title{
-            font-size: 20px;
-            line-height: 25px;
-        }
-
-    }
-}

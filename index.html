@@ -12,12 +12,13 @@
     <title>Shop.co</title>
 </head>
 <body>
-    <header> 
+<header> 
        
             <div class="header">
-                 <div class="container">        
+                 <div class="container">       
+
             <div class="header__discount">
-                <p class="header__discount-text">Sign up and get 20% off to your first order.<span> Sign Up Now</span></p>
+                <p class="header__discount-text">Sign up and get 20% off to your first order.<a href="error.html"><span> Sign Up Now</span></a></p>
                 <img src="img/cross.png" alt="exit" class="header__discount-cross">
             </div>
            
@@ -29,7 +30,7 @@
                 <!--логотип-->
                     <div class="header__logo">
                         <h1 class="header__logo-text">
-                            SHOP.CO
+                            <a href="index.html">SHOP.CO</a>
                         </h1>
                     </div>
                     </div>
@@ -44,9 +45,9 @@
                           <option value="calvinKlein">Calvin Klein</option>
                         </select> 
                                             
-                         <a href="" class="header__nav-item"> On Sale</a>
-                         <a href="" class="header__nav-item">New Arrivals</a>
-                         <a href="" class="header__nav-item"> Brands</a>
+                         <a href="error.html" class="header__nav-item"> On Sale</a>
+                         <a href="#new" class="header__nav-item">New Arrivals</a>
+                         <a href="#brands" class="header__nav-item"> Brands</a>
                     </nav>
                     <!--поисковая строка-->
                     <div class="header__search">
@@ -57,10 +58,10 @@
                     <div class="header__actions">
                         <img src="img\search2.png" alt="searchIcon" class="header__search-icon header__search-icon--invis">
                         <button class="header__actions-btn">
-                           <a href=""><img src="img/cart.png" alt="cart"></a>
+                           <a href="error.html"><img src="img/cart.png" alt="cart"></a>
                         </button>
                          <button class="header__actions-btn">
-                            <a href=""><img src="img/profile.png" alt="profile"></a>
+                            <a href="error.html"><img src="img/profile.png" alt="profile"></a>
                         </button>
                     </div>
                 </div>
@@ -89,7 +90,7 @@
                     to bring out your individuality and cater to your sense of style.
                 </p>
                 <div class="hero__button-wrap">
-                    <button class="hero__button">Shop Now</button> <!--надо ли оставлять кнопку в див-->
+                    <a href="error.html"><button class="hero__button">Shop Now</button></a>
                 </div>
             <!--статистика-->
                 <div class="hero__statistic">
@@ -116,30 +117,30 @@
     </section>
 
     <!--бренды-->
-    <section class="brands">
+    <section class="brands" id="brands">
         <div class="container">
             <div class="brands__list">
                 <div class="brands__list-item">
-                    <img src="img\versace.png" alt="versace" class="brands__logo ">
+                    <a href="error.html"><img src="img\versace.png" alt="versace" class="brands__logo "></a>
                 </div>
                 <div class="brands__list-item">
-                    <img src="img\zara.png" alt="zara" class="brands__logo ">
+                    <a href="error.html"><img src="img\zara.png" alt="zara" class="brands__logo "></a>
                 </div>
                 <div class="brands__list-item">
-                    <img src="img\gucci.png" alt="gucci" class="brands__logo ">
+                   <a href="error.html"> <img src="img\gucci.png" alt="gucci" class="brands__logo "></a>
                 </div>
                 <div class="brands__list-item">
-                    <img src="img\prada.png" alt="prada" class="brands__logo ">
+                  <a href="error.html"><img src="img\prada.png" alt="prada" class="brands__logo "></a>
                 </div>
                 <div class="brands__list-item">
-                    <img src="img\calvinKlein.png" alt="calvin" class="brands__logo ">
+                   <a href="error.html"><img src="img\calvinKlein.png" alt="calvin" class="brands__logo "></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!--new arrivals-->
-    <div class="arrivals">
+    <div class="arrivals" id="new">
         <div class="container">
             <h2 class="arrivals__title">NEW ARRIVALS</h2>
 
@@ -200,7 +201,7 @@
                 </a>
             </div>
             <div class="view">
-            <button class="view__btn">View All</button>
+            <a href="error.html"><button class="view__btn">View All</button></a>
             </div>
         </div>
     </div>
@@ -272,7 +273,7 @@
                 
             </div>
             <div class="view">
-            <button class="view__btn">View All</button>
+            <a href="error.html"><button class="view__btn">View All</button></a>
             </div>
 
         </div>
@@ -284,17 +285,17 @@
         <h2 class="style__title">BROWSE BY DRESS STYLE</h2>
         <div class="style__cards">
 
-            <div class="style__card style__card-casual">
-                <h3 class="style__name">Casual</h3>
+           <div class="style__card style__card-casual">
+                <h3 class="style__name"><a href="error.html">Casual</a></h3>
             </div>
             <div class="style__card style__card-formal">
-                <h3 class="style__name">Formal</h3>
+                <h3 class="style__name"><a href="error.html">Formal</a></h3>
             </div>
             <div class="style__card style__card-party">
-                <h3 class="style__name">Party</h3>
+                <h3 class="style__name"><a href="error.html">Party</a></h3>
             </div>
             <div class="style__card style__card-gym">
-                <h3 class="style__name">Gym</h3>
+                <h3 class="style__name"><a href="error.html">Gym</a></h3>
             </div>
         
         </div>
@@ -393,14 +394,14 @@
                 <img src="img\letter.png" alt="letter" class="subscribe__input-icon">
                 <input type="email" class="subscribe__input-field" placeholder="Enter your email address">
                 </div>
-                <button type="submit" class="subscribe__button">Subscribe to Newsletter</button>
+                <button type="submit" class="subscribe__button"><a href="error.html">Subscribe to Newsletter</a></button>
             </form>
         </div>
     </div>
 </section>
 
     <!--footer-->
-    <section class="footer">
+ <section class="footer">
         <div class="container">
             <div class="footer__content">
                 <div class="footer__nav">
@@ -415,16 +416,16 @@
                         </p>
                         <div class="footer__nav-social">
                             <button class="footer__btn">
-                                <img src="img\twitter.png" alt="twitter" class="footer__nav-logo">
+                               <a href="error.html"><img src="img\twitter.png" alt="twitter" class="footer__nav-logo"></a>
                             </button>
                             <button class="footer__btn footer__btn--black">
                                 <img src="img\fb.png" alt="facebook" class="footer__nav-logo footer__nav-logo-fb">
                             </button>
                             <button class="footer__btn">
-                                <img src="img\instagram.jpg" alt="instagram" class="footer__nav-logo">
+                                <a href="error.html"><img src="img\instagram.jpg" alt="instagram" class="footer__nav-logo"></a>
                             </button>
                             <button class="footer__btn">
-                                <img src="img\github.png" alt="github" class="footer__nav-logo">
+                                <a href="error.html"><img src="img\github.png" alt="github" class="footer__nav-logo"></a>
                             </button>
                         </div>
                     </div>
@@ -432,37 +433,37 @@
                     <div class="footer__nav-point">
                         <h4 class="footer__nav-name">COMPANY</h4>
                         <ul>
-                            <li><a href="" class="footer__nav-link">About</a></li>
-                            <li><a href="" class="footer__nav-link">Features</a></li>
-                            <li><a href="" class="footer__nav-link">Works</a></li>
-                            <li><a href="" class="footer__nav-link">Career</a></li>
+                            <li><a href="error.html" class="footer__nav-link">About</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Features</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Works</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Career</a></li>
                         </ul>
                     </div>
                     <div class="footer__nav-point">
                         <h4 class="footer__nav-name">HELP</h4>
                         <ul>
-                            <li><a href="" class="footer__nav-link">Customer Support</a></li>
-                            <li><a href="" class="footer__nav-link">Delivery Details</a></li>
-                            <li><a href="" class="footer__nav-link">Terms & Conditions</a></li>
-                            <li><a href="" class="footer__nav-link">Privacy Policy</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Customer Support</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Delivery Details</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Terms & Conditions</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div class="footer__nav-point">
                         <h4 class="footer__nav-name">FAQ</h4>
                         <ul>
-                            <li><a href="" class="footer__nav-link">Account</a></li>
-                            <li><a href="" class="footer__nav-link">Manage Deliveries</a></li>
-                            <li><a href="" class="footer__nav-link">Orders</a></li>
-                            <li><a href="" class="footer__nav-link">Payments</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Account</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Manage Deliveries</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Orders</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Payments</a></li>
                         </ul>
                     </div>
                     <div class="footer__nav-point footer__nav-point--last">
                         <h4 class="footer__nav-name">RESOURCES</h4>
                         <ul>
-                            <li><a href="" class="footer__nav-link">Free eBooks</a></li>
-                            <li><a href="" class="footer__nav-link">Development Tutorial</a></li>
-                            <li><a href="" class="footer__nav-link">How to - Blog</a></li>
-                            <li><a href="" class="footer__nav-link">Youtube Playlist</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Free eBooks</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Development Tutorial</a></li>
+                            <li><a href="error.html" class="footer__nav-link">How to - Blog</a></li>
+                            <li><a href="error.html" class="footer__nav-link">Youtube Playlist</a></li>
                         </ul>
                     </div>
                     </div>
