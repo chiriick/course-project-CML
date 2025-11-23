@@ -1,0 +1,140 @@
+.more{
+    max-width: 1240px;
+    margin: 0 auto;
+    &__list{
+    display: grid;
+    grid-template-columns: repeat(3, 414px);
+    }
+    &__point{
+        max-width: 414px;
+        font-family: $font-satoshi;
+        font-size: 20px;
+        padding-bottom: 18px;
+        text-align: center;
+        border-bottom: 1px solid $dark-color-op;
+        &:hover{
+            border-bottom: 1px solid $dark-color;
+        }
+    }
+    &__func{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+    }
+    &__title{
+        font-size: 24px;
+        font-family: $font-satoshi;
+        margin: 0;  
+    }
+    &__value{
+        font-size: 16px;
+        opacity: 60%;
+        font-family: $font-satoshi;
+        margin: 0;
+    }
+    &__all{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &__btn{
+        display: flex;
+        gap: 20px;
+        &-filter{
+            border-radius: 50%;
+            border: none;
+            background-color: $bg-accent-color;
+            padding: 13px 14px;
+        }
+        &-date{
+            
+  font-size: 16px;
+  font-family: "Satoshi", sans-serif;
+  border-radius: 62px;
+  border: none;
+  background-color: #f0f0f0;
+  padding: 12px 20px;
+  width: auto;
+  white-space: nowrap; 
+
+
+            &--drop{
+                border: none;
+                background-color: $bg-accent-color;
+            }
+        }
+        &-write{
+            font-size: 16px;
+            font-family: $font-satoshi;
+            border-radius: 62px;
+            border: none;
+            color: $light-color;
+            background-color: $dark-color;
+            padding: 12px 31px;
+        }
+    }
+    &__request{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 32px;
+    }
+}
+@media(max-width:1245px){
+    .more{
+        &__list{
+         grid-template-columns: repeat(3,1fr);
+        }
+        &__func{
+            padding: 24px 24px;
+        }
+    }
+}
+@media (max-width:600px){
+    .more{
+        &__request{
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+        
+        &__btn{
+            &-date{
+                display: none;
+            }
+        }   
+        &__point{
+                font-size: 16px;
+            
+        }
+    }}
+@media(max-width:470px){
+    .more{
+        &__title{
+            font-size: 16px;
+        }
+        &__value{
+            font-size: 14px;
+        }
+        &__point{
+            font-size: 12px;
+        }
+    }
+}
+@media(max-width:420px){
+    .more{
+        &__func{
+            padding: 16px ;
+        }
+        &__btn{
+            gap: 5px;
+            &-write{
+                padding: 12px 20px;
+                font-size: 11px;
+            }
+            &-filter{
+                padding: 10px 11px;
+            }
+        }
+    }
+}

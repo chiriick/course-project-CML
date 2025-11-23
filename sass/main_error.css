@@ -1,0 +1,31 @@
+.error {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.error__desc {
+  display: flex;
+  flex-direction: column;
+}
+.error__main p {
+  font-size: 32px;
+  font-family: "Integral CF Bold";
+  margin: 0;
+}
+.error__minor p {
+  font-size: 24px;
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+}
+.error__back {
+  border: 0;
+  border-radius: 62px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px 67.5px;
+  font-size: 24px;
+  font-family: "Satoshi", sans-serif;
+}/*# sourceMappingURL=main_error.css.map */

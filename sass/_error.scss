@@ -1,0 +1,33 @@
+@import 'variables';
+.error{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__main p{
+            font-size: 32px;
+            font-family: $font-integral-heavy;
+            margin: 0;
+        }
+    &__minor p{
+        font-size: 24px;
+            font-family: $font-satoshi;
+            margin: 0;
+    }    
+    &__back{
+        border: 0;
+        border-radius: 62px;    
+        background-color: $dark-color-op;
+        padding: 15px 67.5px;
+        font-size: 24px;
+        font-family: $font-satoshi;
+    }
+}

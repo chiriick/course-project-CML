@@ -1,0 +1,113 @@
+@import 'variables';
+.subscribe{
+    &__content{
+        padding: 34px 64px;
+        margin: -90px 100px;
+        position: relative;
+        z-index: 2;
+        background-color: $dark-color;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
+        align-items: center;
+    }
+    &__title{
+        font-size: 40px;
+        font-family: $font-integral-heavy;
+        margin: 0;
+        color: $light-color;
+        line-height: 45px;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    &__input{
+        padding: 15px 16px;
+        background-color: $light-color;
+        border-radius: 62px;
+        width: 317px;
+        display: flex;
+    align-items: center;
+    gap: 12px;
+        &-field{
+            border: 0;
+            
+        }
+        &-field::placeholder{
+            font-family: $font-satoshi;
+            padding: 0;
+            font-size: 16px;
+            opacity: 40%;
+    }
+    }
+    &__button{
+        padding: 12px 16px;
+        background-color: $light-color;
+        border-radius: 62px;
+        text-align: center;
+        align-items: center;
+        font-family: $font-satoshi;
+        font-size: 16px;
+        &:hover{
+            background-color: $dark-color;
+            color: $light-color;
+            border: 1px solid $light-color;
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+    }
+}
+
+@media (max-width:1024px){
+    .subscribe{
+        &__content{
+            flex-direction: column;
+            gap: 30px;
+            margin:-140px 24px;
+        }
+        &__title{
+            text-align: center;
+        }
+    }
+}
+@media(max-width:768px){
+    .subscribe{
+        &__title{
+            font-size: 28px;
+        }
+    }
+}
+@media (max-width:650px){
+    .subscribe{
+        &__content{
+            padding: 34px 32px;
+        }
+        &__title{
+            font-size: 22px;
+        }
+        &__input{
+            max-width: 220px;
+        }
+    }
+}
+@media (max-width:650px){
+    .subscribe{
+        &__input{
+            max-width: 200px;
+        }
+    }
+}
+@media (max-width:375px){
+    .subscribe{
+        &__content{
+            padding: 34px 20px;
+        }
+        &__title{
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+    }
+}

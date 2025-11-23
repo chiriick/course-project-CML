@@ -1,0 +1,243 @@
+@import 'variables';
+.arrivals{
+    padding: 72px 0px 59px 0;
+        max-width: 1240px;
+        margin: 0 auto;
+        border-bottom: 1px solid $dark-color-op;
+        &--prod{
+        padding: 63px 0 66px 0;
+        }
+    &__title{
+        font-size: 48px;
+        font-family: $font-integral;
+        text-align: center;
+        margin: 0;
+        letter-spacing: 1.8px;
+    }
+    &__catalog{
+        display: flex;
+       // justify-content:space-between;
+        padding: 55px 0 36px;
+        gap: 20px;
+        &--prod{
+                padding: 55px 0 102px;
+        }
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        row-gap: 9px;
+    }
+    &__name{
+        font-family: $font-satoshi;
+        font-size: 20px;
+        margin: 0;
+        padding-top: 7px;
+    }
+    &__rate{
+        display: flex;
+        gap: 13px;
+        &-star{
+            height: 18px;
+        }
+        &-value{
+            margin: 0;
+            font-family: $font-satoshi;
+            font-size: 14px;
+            span{
+                opacity: 40%;
+            }
+        }
+    }
+
+    &__price{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &-value{
+            font-family: $font-satoshi;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            &--crossed{
+                opacity: 40%;
+                text-decoration:line-through;
+            }
+        }
+        &-discount{
+            background-color: $disc-color-op;
+            color: $disc-color;
+            border-radius: 62px;
+            padding: 6px 13.5px;
+            p{
+                font-family: $font-satoshi;
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.view{
+    text-align: center;
+    
+    &__btn{
+    border: 1px solid $dark-color-op;
+    background-color: $light-color;
+    border-radius: 62px;
+    font-size: 16px;
+    font-family: $font-satoshi;
+    padding: 15px 80px;
+
+    &-request{
+        padding: 15px 46px;
+    }
+    }
+}
+.view__btn:hover{
+    background-color: $dark-color;
+    color: $light-color;
+        transition: background-color 0.3s ease, color 0.3s ease;
+}
+.view__btn-request:hover{
+    background-color: $dark-color;
+    color: $light-color;
+        transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+.divider{
+    padding-bottom: 53px;
+}
+.top{
+    padding-bottom: 76px;
+        max-width: 1240px;
+        margin: 0 auto;
+    &__title{
+        font-size: 48px;
+        font-family: $font-integral;
+        text-align: center;
+        margin: 0;
+        letter-spacing: 1.8px;
+            padding-top: 65px;
+    }
+    &__catalog{
+        display: flex;
+        padding: 55px 0 36px;
+        gap: 20px;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        row-gap: 9px;
+    }
+    &__name{
+        font-family: $font-satoshi;
+        font-size: 20px;
+        margin: 0;
+        padding-top: 7px;
+    }
+    &__rate{
+        display: flex;
+        gap: 13px;
+        &-star{
+            height: 18px;
+        }
+        &-value{
+            margin: 0;
+            font-family: $font-satoshi;
+            font-size: 14px;
+            span{
+                opacity: 40%;
+            }
+        }
+    }
+    &__price{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &-value{
+            font-family: $font-satoshi;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            &--crossed{
+                opacity: 40%;
+                text-decoration:line-through;
+            }
+        }
+        &-discount{
+            background-color: $disc-color-op;
+            color: $disc-color;
+            border-radius: 62px;
+            padding: 6px 13.5px;
+            p{
+                font-family: $font-satoshi;
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 1240px) {
+  .arrivals__catalog,
+  .top__catalog,
+  .arrivals__catalog--prod{
+    overflow-x: auto;       
+    scroll-snap-type: x mandatory; 
+  }
+
+  .arrivals__card,
+  .top__card {
+    flex: 0 0 80%;          
+    scroll-snap-align: start;
+  }
+  .view{
+    padding-top: 20px;
+  }
+}
+    .top{
+    &__title{
+        padding-top: 40px;
+}
+    }
+@media (max-width:768px){
+    .arrivals__img, .top__img{
+        max-width: 270px;
+    }
+}
+@media(max-width:630px){
+    .view{
+    &__btn{
+        padding: 15px 50px;
+        font-size: 14px;
+    }
+  }
+  .arrivals{
+    &__title{
+        font-size: 38px;
+    }
+  }
+  .top{
+    &__title{
+        font-size: 38px;
+    }
+  }
+}
+@media (max-width:425px){
+    .arrivals__img, .top__img{
+        max-width: 200px;
+    }
+    .arrivals{
+        &__name{
+            font-size: 16px;
+        }
+        &__price{
+            &-value{
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,192 @@
+@import 'variables';
+
+.header {
+    &__discount {
+        background-color: $dark-color;
+        color: $light-color;
+        text-align: center;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &-text {
+            font-family: 'Satoshi', sans-serif;                                        
+            margin: 0;
+            font-size: 14px;
+            font-weight: 200;
+            letter-spacing: 0.1px;
+            span {
+                font-weight: 500;
+                text-decoration: underline ;//?????
+                cursor: pointer;
+            }
+        }
+        &-cross{
+            position: absolute;
+            right: 100px;
+            cursor: pointer;
+        }
+    }
+    &__main{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px;
+        gap: 40px;
+        max-width: 1240px;
+        margin: 0 auto;
+        border-bottom: 1px solid $dark-color-op;
+
+    }
+    &__burger {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 100;
+}
+        &__logo-text{
+            font-size: 32px;
+            margin: 0;
+            font-family: $font-integral-heavy;
+        }
+
+        &__nav{
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            &-item{
+                font-family: $font-satoshi; 
+                font-size: 16px;
+                
+                &--dropdown{
+                    border: 0;
+                    max-width: 58px;
+                }
+            }
+            &-item:hover{
+                border-bottom: 1px solid $dark-color;
+            }
+            
+        }
+        
+        &__search{
+            background-color: $bg-accent-color;
+            border-radius: 62px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 352px 12px 16px;
+            &-icon{
+                width: 24px;
+                height: 24px;
+                &--invis{
+                    display: none;
+                }
+            }
+            &-input{
+                border: 0;
+                background-color: $bg-accent-color;
+            }
+            &-input::placeholder{
+                    font-family: $font-satoshi;
+                    padding: 0;
+                    font-size: 16px;
+                    opacity: 40%;
+                    
+            
+            }
+        
+        }
+
+        &__actions{
+            display: flex;
+            gap:14px;
+            &-btn{
+                border: 0;
+                padding: 0;
+                background-color: $light-color;
+                cursor: pointer;
+                img{
+                    width: 24px;
+                    height: 24px;
+                }
+                
+            }
+        }
+}
+
+@media (max-width: 1288px) {
+  .header{
+    &__burger {
+    display: block;
+  }
+    &__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    display: none;
+    &:active{
+    display: flex;
+    }
+  }
+}
+}
+@media (max-width:990px){
+    .header{
+        &__search{
+    display: none;
+    &-icon{
+        &--invis{
+            display: block;
+        }
+    }
+  }
+}
+}
+@media (max-width:630px){
+    .header{
+        &__discount{
+            &-cross{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:425px){
+    .header{
+        &__logo{
+            &-text{
+                font-size: 25px;
+            }
+        }
+    }
+}
+@media (max-width:375px){
+    .header{
+        &__content{
+            gap: 20px;
+        }
+        &__logo{
+            &-text{
+                font-size: 20px;
+            }
+        }
+        &__discount{
+            &-text{
+                font-size: 10px;
+            }
+        }
+    }
+}

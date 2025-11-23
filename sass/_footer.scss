@@ -1,0 +1,175 @@
+@import 'variables';
+.footer{
+    &__content{
+        padding: 140px 100px 80px 100px;
+        background-color: $bg-accent-color;
+    }
+    &__logo{
+        font-size: 32px;
+            margin: 0;
+            font-family: $font-integral-heavy;
+            letter-spacing: 1px;
+            line-height: 18px;
+    }
+    &__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 113px;
+    justify-content: space-between;
+    }
+    &__nav{
+        display: flex;
+        //justify-content: space-between;
+        gap: 113.5px;
+        border-bottom: 1px solid $dark-color-op;
+        padding-bottom:36px;
+        &-description{
+            font-size: 14px;
+            font-family: $font-satoshi;
+            line-height: 22px;
+            margin: 0;
+            padding: 30px 0 35px;
+            color: $dark-color;
+            opacity: 60%;
+        }
+        &-name{
+            margin: 0;
+            padding-bottom: 12px;
+            letter-spacing: 3px;
+        }
+
+        &-point{
+            font-size: 16px;
+            font-family: $font-satoshi;
+            &--last{
+                padding-left: 20px;
+            }
+        }
+        &-social{
+            display: flex;
+            gap: 12px;
+        }
+        &-logo{
+            text-align: center;
+            &-fb{
+                filter: invert(100%);
+            }
+        }
+        &-link{
+            &:hover{
+                border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+                transition: 0.3s;
+            }
+        }
+    }
+    &__btn{
+        border: $dark-color-op;
+        background-color: $light-color;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        &:hover{
+            filter: invert(100%);
+            transition: 0.3s;
+        }
+        
+    }
+
+    &__divider{
+        padding: 36px 0 16px;
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 23px 0;
+    }
+    &__rights{
+        font-family: $font-satoshi;
+        font-size: 14px;
+        color: $dark-color;
+        opacity: 60%;
+        margin: 0;
+    }
+    &__pay{
+        display: flex;
+        gap: 12px;
+    &-card{
+        background-color: $light-color;
+        border-radius: 5.38px;
+        width: 46.61px;
+        height: 30px;
+        text-align: center;
+        align-content: center;
+    }
+    }
+}
+@media (max-width:1437px){
+    .footer{
+        &__nav{
+        flex-direction: column;
+        justify-content: space-between;
+        &-main{
+            text-align: center;
+        }
+        &-social{
+            justify-content: center;
+        }
+        }
+
+    }
+}
+@media (max-width:1210px){
+    .footer{
+        &__nav{
+        gap: 85.5px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        }
+    }
+}
+@media (max-width:1210px){
+    .footer{
+        &__logo{
+            padding-top: 20px;
+        }
+    }}
+@media (max-width:768px){
+    .footer{
+        &__info{
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+    }
+}
+@media(max-width:610px){
+    .footer{
+        &__content{
+            padding: 140px 24px 80px 24px;
+        }
+        &__list{
+            gap: 60px;
+        }
+        &__nav{
+            &-point{
+                font-size: 14px;
+                &--last{
+            padding-left: 0;
+        }
+    }
+}
+    }}
+    @media(max-width:375px){
+    .footer{
+        &__nav{
+            &-point{
+                font-size: 12px;
+    }
+}
+&__content{
+    padding-bottom: 40px;
+}
+    }}

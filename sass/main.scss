@@ -1,0 +1,29 @@
+//@font-face {
+ // font-family: 'Satoshi-Variable';
+ // src: url('../fonts/Satoshi-Variable.woff2') format('woff2'),
+   //    url('../fonts/Satoshi-Variable.woff') format('woff'),
+     //  url('../fonts/Satoshi-Variable.ttf') format('truetype');
+       //font-weight: 300 900;
+       //font-display: swap;
+       //font-style: normal;}
+
+
+       @font-face {
+    font-family: "Integral CF Heavy";
+    src: url("https://db.onlinewebfonts.com/t/10dcc6285528260041a4ac3b9809fc77.eot");
+    src: url("https://db.onlinewebfonts.com/t/10dcc6285528260041a4ac3b9809fc77.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/10dcc6285528260041a4ac3b9809fc77.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/10dcc6285528260041a4ac3b9809fc77.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/10dcc6285528260041a4ac3b9809fc77.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/10dcc6285528260041a4ac3b9809fc77.svg#Integral CF Heavy")format("svg");
+}
+@import 'variables';
+@import 'base';
+@import 'header';
+@import 'hero';
+@import 'catalog';
+@import 'style';
+@import 'feedback';
+@import 'form';
+@import 'footer';
+

@@ -1,0 +1,191 @@
+@import 'variables';
+.hero>.container{
+        background-image: url("../img/titul.png"); 
+        background-repeat: no-repeat;
+      background-size: cover;           // растягивает на всю область
+  background-position: center right;
+}
+.hero{
+    &__content{
+        display: grid;     
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 84px 0 116px 0;
+        row-gap: 27px;
+    }
+    &__title{
+        font-family: $font-integral-heavy;
+        font-size: 64px;
+        line-height: 65px;
+        margin: 0;
+        &--two{
+            display: none;
+        }
+    }
+
+    &__description{
+        font-family: $font-satoshi;
+        font-size: 16px;
+        line-height: 20px;
+        opacity: 60%;
+        margin: 0;
+    }
+    &__button{
+        border: 0;
+        border-radius: 62px;
+        color: $light-color;
+        background-color: $dark-color;
+        padding: 15px 67.5px;
+        font-size: 16px;
+        font-family: $font-satoshi;
+        letter-spacing: 0.3px;
+        &-wrap{
+        padding-bottom: 20px;}
+        &:hover{
+            background-color: $light-color;
+            color: $dark-color;
+            border: 1px solid $dark-color;
+            transform: scale(1.05);
+            transition: 0.3s;
+            padding: 14px 67.5px;
+        }
+    }
+    &__statistic{
+        display: flex;
+        gap: 32px;
+    }
+
+    &__stat{
+        &--bordered{
+            border-right: 1px solid rgba($color: #000000, $alpha: 0.1);
+            border-left: 1px solid rgba($color: #000000, $alpha: 0.1);
+            padding: 0px 34px;
+        }
+    &-value{
+            font-family: $font-satoshi;
+            font-weight: bold;
+            font-size: 40px;
+    }
+     &-label{
+            font-family: $font-satoshi;
+            font-size: 16px;
+            line-height: 22px;
+            opacity: 60%;
+    }
+}
+&__imgTitul{
+    display: none;
+}
+}
+
+.brands{
+    .container{
+    background-color: $dark-color;
+    }
+    &__list{
+    display: flex;
+    padding: 44px 0 35px;
+    margin: 0 auto;
+    max-width: 1240px;
+    justify-content: space-between;
+    
+}
+}
+
+@media (max-width:1284px){
+    .hero{
+        &__content{
+            padding: 84px 0 116px 24px; ;
+        }
+        &__statistic{
+        flex-wrap: wrap;
+        padding-right: 650px;
+        }
+    }
+
+    .brands{
+        &__list{
+            padding: 44px 24px 35px 24px;
+            gap: 21px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width:1240px){
+    .hero{
+        &__content{
+        padding: 84px 16px 0 16px;
+            justify-items: center;
+        }
+        &__statistic{
+        padding-right: 0px;
+        }
+        &__imgTitul {
+        max-width: 100%;  
+        height: auto;    
+        display: block;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+    .hero>.container{
+        background-color: $bg-accent-color;
+        background-image: none;
+}
+}
+@media (max-width:768px){
+    .hero{
+        &__title{
+            display: none;
+            &--two{
+                display: block;
+                text-align: center;
+                font-size: 52px;
+            }
+        }
+        &__description{
+            text-align: center;
+            padding: 0 16px;
+        }
+        &__button{
+            &-wrap{
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+@media(max-width:632px){
+    .hero{
+        &__statistic{
+            justify-content: center;
+        }
+        &__stat{
+            &--bordered{
+                border-right: none;
+            }
+        }
+    }
+}
+@media(max-width:428px){
+    .hero{
+        &__stat{
+            &--bordered{
+                border-right: none;
+                border-left: none;
+            }
+        }
+        
+}
+}
+@media (max-width:500px){
+    .hero{
+        &__title{
+            &--two{
+                font-size: 34px;
+                line-height: 45px;
+            }
+        }
+    }
+}
